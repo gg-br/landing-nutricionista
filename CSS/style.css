@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&display=swap');
+
+* {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --fundo: #F8F9FA;
+    --texto-principal: #2E2E2E;
+    --texto-secundario: #6C757D;
+    --botoes: #6BA292;
+    --houver: #4E7C6E;
+}
+
+body {
+    font-size: 100%;
+    background-color: var(--fundo);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+
+    & img {
+        border-radius: 50%;
+        height: 150px;
+    }
+
+    & nav {
+        display: flex;
+        gap: 32px;
+
+        & a {
+            color: var(--botoes);
+            font-weight: 400;
+            font-size: 18px;
+        }
+    }
+}
+
+main {
+    border-top: 0.4px solid black;
+    margin-bottom: 48px;
+
+    & section {
+        & div {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+
+            & h1 {
+                font-weight: 400;
+                font-size: 64px;
+                color: var(--texto-principal);
+            }
+
+            & h2{
+                color: var(--texto-secundario);
+                font-weight: 400;
+                font-size: 24px;
+            }
+
+            & p {
+                width: 600px;
+                color: var(--texto-secundario);
+            }
+
+            & button{
+                background-color: var(--botoes);
+                width: 180px;
+                height: 60px;
+                border: none;
+                box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.116);
+                border-radius: 20px;
+                font-weight: 400;
+                font-size: 24px;
+                color: var(--fundo);
+            }
+        }
+
+        & img {
+            height: 430px;
+        }
+    }
+}
+
+.primeira-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.segunda-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
