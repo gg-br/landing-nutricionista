@@ -18,8 +18,9 @@
     --fundo: #F8F9FA;
     --texto-principal: #2E2E2E;
     --texto-secundario: #6C757D;
-    --botoes: #6BA292;
-    --houver: #4E7C6E;
+    --botoes: #2E2E2E;
+    --fundo2: #f4d6d649;
+    --houver: black;
 }
 
 body {
@@ -27,24 +28,40 @@ body {
     background-color: var(--fundo);
 }
 
+button{
+    cursor: pointer;
+}
+button:hover{
+    background-color: var(--houver);
+    transform: scale(1.01);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    
+}
+
+strong{
+    color:var(--texto-principal);
+}
+
 header {
+    background-color: var(--fundo2);
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    padding: 24px;
-
+    justify-content: center;
+    gap: 600px;
+    padding: 10px 20px;
+    
     & img {
         border-radius: 50%;
-        height: 150px;
+        height: 75px;
     }
 
     & nav {
         display: flex;
-        gap: 32px;
+        gap: 25px;
 
         & a {
-            color: var(--botoes);
+            color: var(--texto-secundario);
             font-weight: 400;
             font-size: 18px;
         }
@@ -52,7 +69,6 @@ header {
 }
 
 main {
-    border-top: 0.4px solid black;
     margin-bottom: 48px;
 
     & section {
@@ -60,7 +76,7 @@ main {
             display: flex;
             flex-direction: column;
             gap: 32px;
-
+           
             & h1 {
                 font-weight: 400;
                 font-size: 64px;
@@ -68,7 +84,7 @@ main {
             }
 
             & h2{
-                color: var(--texto-secundario);
+                color: var(--texto-principal);
                 font-weight: 400;
                 font-size: 24px;
             }
@@ -80,7 +96,7 @@ main {
 
             & button{
                 background-color: var(--botoes);
-                width: 180px;
+                width: 280px;
                 height: 60px;
                 border: none;
                 box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.116);
@@ -92,7 +108,8 @@ main {
         }
 
         & img {
-            height: 430px;
+            height: 350px;
+            border-radius: 20px;
         }
     }
 }
@@ -102,11 +119,28 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    justify-content: center;
+    gap: 150px;
+    padding: 15px;
+   
 }
 
 .segunda-section {
+    background-color: var(--fundo2);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    gap: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    & p{
+        color: var(--texto-secundario);
+        text-align: center;
+        width: 700px;
+    }
+
+    & h3{
+        color: #2E2E2E;
+        padding-top: 0px;
+    }
 }

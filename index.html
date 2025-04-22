@@ -5,48 +5,236 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="CSS/style.css">
+   <style>
+    @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --fundo: #F8F9FA;
+    --texto-principal: #2E2E2E;
+    --texto-secundario: #6C757D;
+    --botoes: #2E2E2E;
+    --fundo2: #f4d6d649;
+    --houver: black;
+}
+
+body {
+    font-size: 100%;
+    background-color: var(--fundo);
+}
+
+button{
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--houver);
+    transform: scale(1.01);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+ 
+}
+
+strong{
+    color:var(--texto-principal);
+}
+
+header {
+    background-color: var(--fundo2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+height: 80px;
+    
+    & img {
+        border-radius: 50%;
+        height: 75px;
+    }
+
+    & nav {
+        display: flex;
+        gap: 25px;
+
+        & a {
+            color: var(--texto-secundario);
+            font-weight: 400;
+            font-size: 18px;
+        }
+    }
+}
+
+main {
+    & section {
+        & div {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+           
+            & h1 {
+            
+                font-weight: 400;
+                font-size: 64px;
+                color: var(--texto-principal);
+            }
+
+            & h2{
+                color: var(--texto-principal);
+                font-weight: 500;
+                font-size: 25px;
+            }
+
+            & p {
+                width: 600px;
+                color: var(--texto-secundario);
+            }
+
+            & button{
+                background-color: var(--botoes);
+                width: 280px;
+                height: 60px;
+                border: none;
+                box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.116);
+                border-radius: 20px;
+                font-weight: 400;
+                font-size: 24px;
+                color: var(--fundo);
+            }
+        }
+
+        & img {
+            height: 350px;
+            border-radius: 20px;
+        }
+    }
+}
+
+.primeira-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    justify-content: center;
+    gap: 150px;
+    padding: 15px;
+   
+}
+
+.segunda-section {
+    background-color: var(--fundo2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    justify-content: center;
+    gap: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    & p{
+        color: var(--texto-secundario);
+        text-align: left;
+        width: 550px;
+    }
+
+    & h3{
+        color: #2E2E2E;
+        padding-top: 0px;
+    }
+
+    & img{
+        height: 300px;
+    }
+
+    & div{
+       
+        width: 550px;
+    }
+}
+
+footer{
+    background-color: var(--fundo2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    gap: 200px;
+    padding: 25px;
+    background-color: var(--fundo);
+    color: var(--texto-secundario);
+}
+   </style>
 </head>
 
 <body>
     <header>
-        <img src="Imagens/logo2.png" alt="Carolina Moura">
-        <nav>
-            <a href="">Tutorial</a>
-            <a href="">Tutorial</a>
-            <a href="">Tutorial</a>
-            <a href="">vTutorial</a>
-        </nav>
+      
+        
     </header>
     <main>
+
         <section class="primeira-section">
             <div>
                 <h1>Carolina Moura</h1>
-                <h2>
-                    “Alimentação inteligente, saúde de verdade.”
-                </h2>
+                <h2>Nutricionista Materno-Infantil</h2>
                 <p>
-                    Oi, eu sou a Carolina! Como nutricionista, meu foco é ajudar mulheres grávidas, mães e crianças a terem uma alimentação saudável e equilibrada. Tenho uma abordagem personalizada, dedicada a apoiar você em cada fase da vida, seja durante a gravidez, na amamentação ou no crescimento saudável dos seus filhos.
-
-                    Acredito que a alimentação é um pilar essencial para o bem-estar, e por isso, busco sempre entender as necessidades únicas de cada paciente. Ofereço orientações práticas, com soluções que se encaixam na sua rotina, ajudando a criar hábitos saudáveis de forma simples e sustentável.
+                    Olá, sou nutricionista especializada em saúde materno-infantil, com foco no cuidado de gestantes, mães e crianças. <br>
+                    Ofereço acompanhamento nutricional personalizado para cada fase da vida, com orientações práticas que se ajustam à rotina de cada paciente. 
                 </p>
-                <button>Contato</button>
+                <button>Agende uma consulta</button>
             </div>
             <img src="Imagens/foto.png" alt="Minha foto">
         </section>
 
         <section class="segunda-section">
-            <h3>Principais serviços</h3>
+            <img src="Imagens/bebe.png" alt="">
+            <div>
+                <p><strong>Nutrição para gestantes:</strong> <br>Acompanhamento nutricional personalizado para garantir uma gravidez
+                        saudável, com foco no bem-estar da mãe e no desenvolvimento adequado do bebê.</p>
+                <p><strong>Nutrição pediátrica:</strong> <br>Consultoria nutricional para crianças de todas as idades, com
+                    ênfase em uma alimentação balanceada que favoreça o crescimento saudável e o fortalecimento do sistema
+                    imunológico.</p>
+                <p><strong>Acompanhamento durante a amamentação:</strong> <br>Planejamento alimentar para mães que amamentam, visando
+                    aumentar a produção de leite e garantir que a mãe tenha a nutrição necessária para essa
+                    fase.</p>
+            </div>
 
-            <p>Nutrição para gestantes: Acompanhamento nutricional personalizado para garantir uma <strong>gravidez saudável</strong>, com foco no bem-estar da mãe e no desenvolvimento adequado do bebê.</p>
-
-            <p>Nutrição pediátrica: Consultoria nutricional para <strong>crianças de todas as idades</strong>, com ênfase em uma alimentação balanceada que favoreça o crescimento saudável e o fortalecimento do sistema imunológico.</p>
-
-            <p>Acompanhamento nutricional durante a amamentação: Planejamento alimentar para mães que amamentam, visando <strong>aumentar a produção de leite</strong> e garantir que a mãe tenha a nutrição necessária para essa fase.</p>
         </section>
     </main>
     <footer>
-oi
+        <div>
+            Contato<br>
+            Razão social: Carolina Moura Nutrição LTDA<br>
+            E-mail: contato@carolinamoura.com.br<br>
+            Telefone: +55 (11) 3456-7890
+        </div>
+        <div>
+            Endereço<br>
+            Rua Dr. Arnaldo Pereira, 450<br>
+            São Paulo/SP<br>
+            CEP: 04567-123<br>
+            Brasil
+        </div>
+        <div>
+            Política de Privacidade<br>
+            Termos de Uso<br>
+            Regras de Conduta<br>
+            Carolina Moura © 2025 Todos os direitos reservados
+        </div>
     </footer>
 </body>
 
