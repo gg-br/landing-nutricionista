@@ -12,7 +12,7 @@
     }
 
     .primeira-section {
-        flex-direction: column-reverse; /* <- isso aqui inverte a ordem */
+        flex-direction: column-reverse;
         align-items: center;
         gap: 30px;
         padding: 20px;
