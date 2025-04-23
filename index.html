@@ -4,196 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <title>Nutricionista Materno-Infantil</title>
-    <style>
-        @charset "UTF-8";
-
-        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-
-        * {
-            font-family: "Merriweather", serif;
-            font-optical-sizing: auto;
-            font-weight: weight;
-            font-style: normal;
-
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            text-decoration: none;
-        }
-
-        :root {
-            --fundo: #F8F9FA;
-            --texto-principal: #2E2E2E;
-            --texto-secundario: #6C757D;
-            --botoes: #2E2E2E;
-            --fundo2: #f4d6d649;
-            --houver: black;
-        }
-
-        body {
-            font-size: 100%;
-            background-color: var(--fundo);
-        }
-
-        button {
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: var(--houver);
-            transform: scale(1.01);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-
-        }
-
-        strong {
-            color: var(--texto-principal);
-        }
-
-        header {
-            background-color: var(--fundo2);
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            height: 80px;
-
-            & nav {
-                display: flex;
-                gap: 35px;
-
-                & a {
-                    color: var(--texto-secundario);
-                    font-weight: 400;
-                    font-size: 18px;
-
-                    & i:hover {
-                        color: black; 
-                        transform: scale(1.05);
-                    }
-                }
-            }
-        }
-
-        main {
-            & section {
-                & div {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 32px;
-
-                    & h1 {
-                        
-                        font-weight: 400;
-                        font-size: 64px;
-                        color: var(--texto-principal);
-                    }
-
-                    & h2 {
-                        color: var(--texto-principal);
-                        font-weight: 500;
-                        font-size: 25px;
-                    }
-
-                    & p {
-                        width: 600px;
-                        color: var(--texto-secundario);
-                    }
-
-                    & button {
-                        background-color: var(--botoes);
-                        width: 280px;
-                        height: 60px;
-                        border: none;
-                        box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.116);
-                        border-radius: 20px;
-                        font-weight: 400;
-                        font-size: 24px;
-                        color: var(--fundo);
-                    }
-                }
-
-                & img {
-                    height: 350px;
-                    border-radius: 20px;
-                    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.486);
-                }
-            }
-        }
-
-        .primeira-section {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-around;
-            justify-content: center;
-            gap: 150px;
-            padding: 15px;
-
-        }
-
-        .segunda-section {
-            background-color: var(--fundo2);
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-around;
-            justify-content: center;
-            gap: 24px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-
-            & p {
-                color: var(--texto-secundario);
-                text-align: left;
-                width: 550px;
-            }
-
-            & h3 {
-                color: #2E2E2E;
-                padding-top: 0px;
-            }
-
-            & img {
-                height: 300px;
-            }
-
-            & div {
-
-                width: 550px;
-            }
-        }
-
-        footer {
-            background-color: var(--fundo);
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            padding: 10px;
-
-            & section {
-                padding: 15px;
-                width: 1050px;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
-                font-size: 10px;
-                gap: 200px;
-                background-color: var(--fundo);
-                color: var(--texto-secundario);
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="CSS/style-PC.css">
+    <link rel="stylesheet" href="CSS/style-TABLET.css">
+    <link rel="stylesheet" href="CSS/style-CELULAR.css">
 </head>
 
 <body>
@@ -205,7 +22,6 @@
         </nav>
     </header>
     <main>
-
         <section class="primeira-section">
             <div>
                 <h1>Carolina Moura</h1>
@@ -220,7 +36,6 @@
             </div>
             <img src="Imagens/foto.png" alt="Carolina Moura, nutricionista especializada em saúde materno-infantil">
         </section>
-
         <section class="segunda-section">
             <img src="Imagens/bebe.png" alt="Bebê sorrindo representando nutrição pediátrica">
             <div>
@@ -237,11 +52,9 @@
                     aumentar a produção de leite e garantir que a mãe tenha a nutrição necessária para essa
                     fase.</p>
             </div>
-
         </section>
     </main>
     <footer>
-
         <section>
             <div>
                 <strong>Contato</strong><br>
@@ -263,9 +76,7 @@
                 Carolina Moura © 2025 Todos os direitos reservados
             </div>
         </section>
-
     </footer>
-    <script src="js.js"></script>
 </body>
 
 </html>

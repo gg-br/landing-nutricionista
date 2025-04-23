@@ -1,0 +1,66 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+    header {
+        height: 70px;
+    }
+
+    header nav a {
+        font-size: 16px;
+    }
+
+    .primeira-section {
+        gap: 80px;
+        padding: 20px;
+    }
+
+    .primeira-section div h1 {
+        font-size: 48px;
+    }
+
+    .primeira-section div h2 {
+        font-size: 22px;
+    }
+
+    .primeira-section div p {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .primeira-section img {
+        height: 280px;
+    }
+
+    .primeira-section div button {
+        width: 220px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .segunda-section {
+        gap: 40px;
+        padding: 20px;
+    }
+
+    .segunda-section img {
+        height: 250px;
+    }
+
+    .segunda-section div {
+        width: 90%;
+    }
+
+    .segunda-section p {
+        font-size: 15px;
+        width: 100%;
+    }
+
+    footer section {
+        width: 95%;
+        gap: 80px;
+        font-size: 11px;
+        padding: 20px;
+    }
+
+    footer section div {
+        width: auto;
+    }
+}
