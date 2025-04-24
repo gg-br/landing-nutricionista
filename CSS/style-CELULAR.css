@@ -39,7 +39,6 @@
     }
 
     .primeira-section div button {
-        margin-top: 10px;
         width: 180px;
         height: 40px;
         font-size: 16px;
@@ -60,6 +59,7 @@
 
     .segunda-section img {
         height: 180px;
+        margin-bottom: 10px;
     }
 
     .segunda-section div {
